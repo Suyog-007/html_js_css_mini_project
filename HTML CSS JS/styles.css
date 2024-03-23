@@ -1,0 +1,38 @@
+/* CSS for navigation bar */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #000000, #1a1a1a); /* Gradient background from black to dark gray */
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left; /* Float the links to the left */
+  display: block; /* Display each link as a block element */
+  color: #ffffff; /* Text color of the links */
+  text-align: center; /* Center align the text */
+  padding: 14px 20px; /* Padding around the text */
+  text-decoration: none; /* Remove default underline from links */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white on hover */
+}
+
+.active {
+  background-color: #ffcc00; /* Yellow for active link */
+  color: #000000; /* Text color of active link */
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
