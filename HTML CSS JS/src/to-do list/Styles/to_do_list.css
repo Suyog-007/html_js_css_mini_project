@@ -40,6 +40,14 @@ main {
   justify-content: center;
 }
 
+.searchField input {
+  border: none;
+  background: transparent;
+  margin-top: 10px;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
 .todos {
   display: grid;
   grid-template-areas: "todos-nav add-todo-form" "todos-nav todos-list";

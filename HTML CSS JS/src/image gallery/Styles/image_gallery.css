@@ -1,0 +1,79 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("bg.jpg") no-repeat center/cover;
+}
+
+.figure {
+  max-width: 100%;
+  border: 1px solid #353535;
+  position: relative;
+  padding: 20px;
+  padding-bottom: 10px;
+  background: rgba(256, 256, 256, 0.7);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.figure_content {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.figure_content .shareBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #005eff;
+  color: white;
+  border-radius: 8px;
+  padding: 6px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.figure:hover .figure_content {
+  opacity: 1;
+}
+
+
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.name {
+  /* position: absolute;
+  background-color: rgba(8, 8, 8, 0.5); */
+  color: black;
+  font-size: 20px;
+  padding: 0.2em 0;
+  justify-self: start;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+#container {
+  column-count: 4;
+  column-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-row-gap: 20px;
+  grid-column-gap: 30px;
+  max-width: 100%;
+  padding: 20px;
+}

@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>To do List</title>
-<link rel="stylesheet" href="/src/to-do list/Styles/to_do_list.css">
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="./Styles/to_do_list.css">
+<link rel="stylesheet" href="../../styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,9 +15,9 @@
 <body>
 
 <div class="navbar">
-  <a class="active" href="/home.html">Home</a>
-  <a href="/src/to-do list/to_do_list.html">To-do List</a>
-  <a href="/src/image gallery/image_gallery.html">Image Gallery</a>
+  <a class="active" href="../../home.html">Home</a>
+  <a href="#">To-do List</a>
+  <a href="../image gallery/image_gallery.html">Image Gallery</a>
 </div>
 <main>
 
@@ -43,18 +43,23 @@
       </button>
     </nav>
   
-    <form id="add-todo-form">
-      <input type="text" name="todo-text" id="todo-text" placeholder="Todo..." required>
-      <!-- <input type="text" name="todo-search" id="todo-search" placeholder="Search..." required> -->
-      <input type="date" name="todo-date" id="todo-date" required>
-      <button id="add-todo-btn" class="active" type="submit">Add</button>
-    </form>
-  
+    <div class="flex">
+      <form id="add-todo-form">
+        <input type="text" name="todo-text" id="todo-text" placeholder="Todo..." required>
+        <!-- <input type="text" name="todo-search" id="todo-search" placeholder="Search..." required> -->
+        <input type="date" name="todo-date" id="todo-date" required>
+        <button id="add-todo-btn" class="active" type="submit">Add</button>
+      </form>
+      <div class="searchField">
+        <input type="text" placeholder="Search..">
+      </div>
+    </div>
+
     <ul id="todos-list">
       <!-- todo's will be loaded here dynamically -->
     </ul>
   </div>
 </main>
-<script src="/src/to-do list/to-do-list.js"></script>
+<script src="./to-do-list.js"></script>
 </body>
 </html>
